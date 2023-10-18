@@ -1,5 +1,7 @@
-let name = 'kahina ';
+import app from "./app";
 
-const buildPerson = (person: string): string => `Your persom is ${person}`;
+const PORT = 7070;
 
-console.log(buildPerson(name));
+app.listen(PORT, () => {
+    console.log(`🚀 Magic happening on port ${PORT} 🚀`);
+});
